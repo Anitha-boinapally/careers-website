@@ -1,0 +1,16 @@
+<div>
+  <p>
+   <b>{{job['Role']}}</b>
+    <button type="button" style="margin-left:100px" class="btn btn-primary">Apply</button>
+
+  </p>
+  <p>
+    {{job['location']}}
+  </p>
+  <p>
+    {% if salary in job %}
+    {{job['salary']}}
+    {% endif%}
+  </p>
+  
+</div>
